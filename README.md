@@ -68,6 +68,9 @@ How to achieve this?
     - Once you have [a list with applications to be whitelisted](https://github.com/fvjb/Windows-Monitoring/blob/master/refinement/applocker-lookuptable.csv), feed them back into the system as a lookup table. You can then focus on all applications that are not contained in the list but logged anyway. 
 
     ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-20.png)
+
+    - Now add another category "appcat" and define whether an application must be suppressed or authorized: 
+    
     ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-21.png)
 
 - Rollout Applocker
