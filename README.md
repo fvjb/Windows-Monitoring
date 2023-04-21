@@ -53,8 +53,12 @@ How to achieve this?
         - __what application__ (apppath) 
         - __on which system__ (source) with 
         - _what consequences (action)_
+    - Export relevant data required for organization-wide discussions and potential further processing in Excel
+
+    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-11.png)
 
 - Create Application Whitelist
+
 
 - Refine Application Whitelist
 
