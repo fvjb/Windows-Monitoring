@@ -43,6 +43,15 @@ How to achieve this?
     - Configure Windows Servers to send the required Logs
         - [Sidecar](https://go2docs.graylog.org/5-0/getting_in_log_data/graylog_sidecar.html)
         - [NXLog - Gelf]() - optional
-    - Verify Results: Open the __"Windows - Applocker"__ Dashboard and start working: 
+    - Verify Results: Open the __"Windows - Applocker"__ Dashboard and start investigating: 
 
     ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-2.png)
+
+- Determine legitimate and non-authorized applications
+    - Investigate the "Application Overview" Dashboard and understand the user-application-system triangle (who uses what application on what system)
+
+- Create Application Whitelist
+
+- Refine Application Whitelist
+
+- Rollout Applocker
