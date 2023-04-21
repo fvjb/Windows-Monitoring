@@ -33,5 +33,6 @@ What needs to be done, though?
 #### Solution
 How to achieve this? 
 - Collect Audit Data: 
-    - [Installing a Centralized Log Management System](https://go2docs.graylog.org/5-0/downloading_and_installing_graylog/installing_graylog.html)
+    - [Installing a Centralized Log Management System (CLM)](https://go2docs.graylog.org/5-0/downloading_and_installing_graylog/installing_graylog.html)
     - [Getting a license key](https://go2.graylog.org/request-graylog-operations)
+    - Configuring CLM importing the Applocker Demo Content Pack
