@@ -15,7 +15,7 @@ The Centralized Log Management (CLM) approach allows to securely evolve through 
 - Software standardization
 - Manageability improvement
 
-However, this article focuses on organizations that try to improve their attack surface. In some cases, these organizations are guided by frameworks, such as _BSI Grundschutz_ - [Application Whitelisting, SYS.2.2.3.A5](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Kompendium_Einzel_PDFs_2021/07_SYS_IT_Systeme/SYS_2_2_3_Clients_unter_Windows_10_Edition_2021.pdf), *ISO 27001* - [Application Whitelisting, 12.2.1](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Kompendium/Zuordnung_ISO_und_IT_Grundschutz.pdf), _KRITIS_ or some of the industry-specific standards that arose over the last couple of years. 
+However, this article focuses on organizations that try to improve their attack surface. In some cases, these organizations are guided by frameworks, such as __BSI Grundschutz__ - [Application Whitelisting, SYS.2.2.3.A5](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Kompendium_Einzel_PDFs_2021/07_SYS_IT_Systeme/SYS_2_2_3_Clients_unter_Windows_10_Edition_2021.pdf), __ISO 27001__ - [Application Whitelisting, 12.2.1](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Kompendium/Zuordnung_ISO_und_IT_Grundschutz.pdf), __KRITIS__ or some of the industry-specific standards that arose over the last couple of years. 
 
 #### Graylog
 Graylog allows to collect, parse, normalize, enrich and analyze log data. This article describes how to prepare for a successful implementation of Application Whitelisting without catching all the usual pitfalls. The first pitfall - obv
