@@ -39,4 +39,9 @@ How to achieve this?
     - [Getting a license key](https://go2.graylog.org/request-graylog-operations)
     - [Installing the Illuminate Pack for proper parsing](https://go2docs.graylog.org/5-0/what_more_can_graylog_do_for_me/graylog_illuminate.html)
     - [Configuring CLM importing the Applocker Demo Content Pack](https://github.com/fvjb/Windows-Monitoring/tree/master/contentpacks)
-    - [Configure Windows Servers to create the required Logs]()
+    - [Configure Windows Servers to create the required Logs](https://github.com/fvjb/Windows-Monitoring/tree/master/grouppolicy)
+    - Configure Windows Servers to send the required Logs
+        - [Sidecar](https://go2docs.graylog.org/5-0/getting_in_log_data/graylog_sidecar.html)
+        - [NXLog - Gelf]() - optional
+    - Verify Results: Open the "Windows - Applocker" Dashboard: 
+    ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-1.png)
