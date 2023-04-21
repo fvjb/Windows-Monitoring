@@ -45,7 +45,7 @@ How to achieve this?
         - [NXLog - Gelf]() - optional
     - Verify Results: Open the __"Windows - Applocker"__ Dashboard and start investigating: 
 
-    ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-3.png)
+    ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-4.png)
 
 - Determine legitimate and non-authorized applications
     - Investigate the "Application Overview" Dashboard and understand the user-application-system triangle (who uses what application on what system)
