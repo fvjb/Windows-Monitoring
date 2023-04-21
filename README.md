@@ -8,7 +8,7 @@ One of the most challenging tasks of a Windows Administrator is to keep track an
 
 Being known for quite a long time, the Application Whitelisting Approach didn't make it into the average IT environment, as results of such initiatives turned out to be predictably unpredictable with many side-effects. The reason for failure? Inability to create an accurate Application Whitelist, thus breaking required functionality right after Rollout enforcing immediate Rollback and causing a lot of "feedback" from Business Units. 
 
-For more than 15 years, Microsoft offers a builtin solution to control application usage in Windows environments for Server Operating Systems: [AppLocker](https://learn.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview). Promoting it, the following advantages are named by [Microsoft](https://learn.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview#:~:text=AppLocker%20addresses%20the%20following%20app%20security%20scenarios): 
+For more than 15 years, Microsoft offers a builtin solution to control application usage in Windows environments for Server Operating Systems: [AppLocker](https://learn.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview). Promoting it, the following advantages are named by [the vendor](https://learn.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview#:~:text=AppLocker%20addresses%20the%20following%20app%20security%20scenarios): 
 - Application inventory
 - Protection against unwanted software
 - Licensing conformance
