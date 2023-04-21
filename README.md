@@ -73,4 +73,6 @@ How to achieve this?
 
     ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-21.png)
 
+    - Save it as a __.csv__ file and make sure strings are saved with double-quotes __"__, fields separated by comma __,__
+
 - Rollout Applocker
