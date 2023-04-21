@@ -37,4 +37,6 @@ How to achieve this?
         - [Repo: Docker-Compose](https://github.com/Graylog2/docker-compose) for DEV/TEST environments (_real quickstart_)
         - [Video: Ubuntu Install](https://www.graylog.org/videos/ubuntu-install)
     - [Getting a license key](https://go2.graylog.org/request-graylog-operations)
-    - Configuring CLM importing the Applocker Demo Content Pack
+    - [Installing the Illuminate Pack for proper parsing](https://go2docs.graylog.org/5-0/what_more_can_graylog_do_for_me/graylog_illuminate.html)
+    - [Configuring CLM importing the Applocker Demo Content Pack](https://github.com/fvjb/Windows-Monitoring/tree/master/contentpacks)
+    - [Configure Windows Servers to create the required Logs]()
