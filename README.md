@@ -69,8 +69,8 @@ How to achieve this?
 
     ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-20.png)
 
-    - Now add another category "appcat" and define whether an application must be suppressed or authorized: 
-    
+    - Now add another category "appcat" and define whether an application must be suppressed or authorized; keep the following columns: "appid", "appcat" and "apppath"
+
     ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-21.png)
 
 - Rollout Applocker
