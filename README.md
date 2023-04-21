@@ -62,7 +62,7 @@ How to achieve this?
 - Create Application Whitelist
     - Work through all applications and understand which of these require your attention. The base path ("appbase") can be helpful when prioritizing activities. 
     
-    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-15.png)
+    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-14.png)
 
 - Refine Application Whitelist (optional)
     - Once you have [a list with applications to be whitelisted](https://github.com/fvjb/Windows-Monitoring/blob/master/refinement/applocker-lookuptable.csv), feed them back into the system as a lookup table. You can then focus on all applications that are not contained in the list but logged anyway. 
