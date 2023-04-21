@@ -69,7 +69,7 @@ How to achieve this?
 
     ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-20.png)
 
-    - Now add another category "appcat" and define whether an application must be suppressed or authorized; keep the following columns: "appid", "appcat" and "apppath"
+    - Now add another category "appcat" and define whether an application must be __suppressed__ or __authorized__; keep the following columns: _"appid"_, _"appcat"_ and _"apppath"_
 
     ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-21.png)
 
