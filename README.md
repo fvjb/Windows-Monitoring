@@ -43,6 +43,6 @@ How to achieve this?
     - Configure Windows Servers to send the required Logs
         - [Sidecar](https://go2docs.graylog.org/5-0/getting_in_log_data/graylog_sidecar.html)
         - [NXLog - Gelf]() - optional
-    - Verify Results: Open the "Windows - Applocker" Dashboard: 
-    
+    - Verify Results: Open the __"Windows - Applocker"__ Dashboard and start working: 
+
     ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-2.png)
