@@ -19,6 +19,7 @@ The value propositions above do fully contribute to Cybersecurity objectives, as
 
 This can cause massive headaches in IT Teams, as they are aware that such projects failed in the past. They know they don't have the necessary transparency to create the complete Application Whitelist representing the condition for a seamless rollout. 
 
+
 #### Approach
 What needs to be done, though? 
 - Collect Audit Data to ensure all applications running on systems to be protected by the Application Whitelisting mechanism are __fully documented__
@@ -30,3 +31,8 @@ What needs to be done, though?
 
 
 #### Solution
+How to achieve this? 
+- Collect Audit Data: 
+--[Installing a Centralized Log Management System](https://go2docs.graylog.org/5-0/downloading_and_installing_graylog/installing_graylog.html)
+-- [Getting a license key](https://go2.graylog.org/request-graylog-operations)
+- 
