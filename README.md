@@ -4,3 +4,5 @@ One of the most challenging tasks of a Windows Administrator is to keep track of
 - to protect against unlicensed, unauthorized or insecure software
 - to ensure all software survives a major Operating System upgrade
 - to get on top of creeping operational efforts caused by interferences with untested applications
+
+For more than 15 years, Microsoft offers a builtin solution to control application usage in Windows environments (for Server Operating Systems and selected Client Operating Systems) - [AppLocker](https://learn.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview). 
