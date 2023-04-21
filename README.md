@@ -48,7 +48,11 @@ How to achieve this?
     ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-4.png)
 
 - Determine legitimate and non-authorized applications
-    - Investigate the "Application Overview" Dashboard and understand the user-application-system triangle (who uses what application on what system)
+    - Investigate the "Application Overview" Dashboard and understand the user-application-system triangle 
+        - __who uses__ (user_name) 
+        - __what application__ (apppath) 
+        - __on which system__ (source) with 
+        - _what consequences (action)_
 
 - Create Application Whitelist
 
