@@ -57,7 +57,7 @@ How to achieve this?
 
     ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-11.png)
 
-    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-12.png)
+    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-13.png)
 
 - Create Application Whitelist
 
