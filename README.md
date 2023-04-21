@@ -58,12 +58,15 @@ How to achieve this?
     ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-11.png)
 
     ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-13.png)
+
+- Create Application Whitelist
+    - Work through all applications and understand which of these require your attention. The base path ("appbase") can be helpful when prioritizing activities. 
     
     ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-15.png)
 
-- Create Application Whitelist
+- Refine Application Whitelist (optional)
+    - Once you have a list with applications to be whitelisted, feed them back into the system as lookup table. You can then focus on all applications that are not contained in the list but logged anyway. 
 
-
-- Refine Application Whitelist
+    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-15.png)
 
 - Rollout Applocker
