@@ -63,11 +63,7 @@ How to achieve this?
         - _what consequences (action)_
 
     - In case the number of applications is high and you need multiple teams to work with you, we recommend to enrich your logs with the responsibility flag ("appteam"): 
-        - create a csv-list of systems with the corresponding teams following this format and make sure it's utf-8 encoded: 
-            "machine","team"
-            "SERVER132","TEAM BOSTON"
-            "SERVER202","TEAM HOUSTON"
-            [EXAMPLE FILE]()
+        - create a csv-list of systems with the corresponding teams following this format and make sure it's utf-8 encoded: [EXAMPLE FILE](https://github.com/fvjb/Windows-Monitoring/blob/master/lookuptables/managementlist.csv )
         - upload this list to your graylog server(s) and store it in __"/etc/graylog/lookup-tables"__ (must be the same path on all machines)
         - make sure the user "graylog" has __read and write permissions__ on the file (_chown graylog:graylog yourlookuptable.csv_)
 
