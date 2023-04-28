@@ -15,9 +15,9 @@ For more than 15 years, Microsoft offers a builtin solution to control applicati
 - Software standardization
 - Manageability improvement
 
-The value propositions above do fully contribute to Cybersecurity objectives, as they do help to diminish the attack surface of an IT environment. Some organizations are guided by frameworks, such as __BSI Grundschutz__ - [Application Whitelisting, SYS.2.2.3.A5](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Kompendium_Einzel_PDFs_2021/07_SYS_IT_Systeme/SYS_2_2_3_Clients_unter_Windows_10_Edition_2021.pdf), __ISO 27001__ - [Application Whitelisting, 12.2.1](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Kompendium/Zuordnung_ISO_und_IT_Grundschutz.pdf), __KRITIS__ or some of the industry-specific standards that arose over the last couple of years, requiring to implement some type of Application Whitelisting Solution. 
+The value propositions above do fully contribute to Cybersecurity objectives, as they do help to significantly diminish the attack surface of an IT environment. Some organizations are guided by frameworks, such as __BSI Grundschutz__ - [Application Whitelisting, SYS.2.2.3.A5](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Kompendium_Einzel_PDFs_2021/07_SYS_IT_Systeme/SYS_2_2_3_Clients_unter_Windows_10_Edition_2021.pdf), __ISO 27001__ - [Application Whitelisting, 12.2.1](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Kompendium/Zuordnung_ISO_und_IT_Grundschutz.pdf), __KRITIS__ or some of the industry-specific standards that arose over the last couple of years, requiring to implement some type of Application Whitelisting Solution. 
 
-This can cause massive headaches in IT Teams, as they are aware that such projects failed in the past. They know they don't have the necessary transparency to create the complete Application Whitelist representing the condition for a seamless rollout. 
+While the advantages are obvious - attackers can't execute scripts or applications on your servers and endpoints any more - starting an implementation project can cause massive headaches in IT Teams, as they are aware that such projects failed in the past. They know they don't have the necessary transparency to create the complete Application Whitelist representing the condition for a seamless rollout. 
 
 
 #### Approach
@@ -37,12 +37,13 @@ How to achieve this?
         - [Repo: Docker-Compose](https://github.com/Graylog2/docker-compose) for DEV/TEST environments (_real quickstart_)
         - [Video: Ubuntu Install](https://www.graylog.org/videos/ubuntu-install)
     - [Getting a license key](https://go2.graylog.org/request-graylog-operations)
-    - [Installing the Illuminate Pack for proper parsing](https://go2docs.graylog.org/5-0/what_more_can_graylog_do_for_me/graylog_illuminate.html)
+    - [Installing the Illuminate Pack](https://go2docs.graylog.org/5-0/what_more_can_graylog_do_for_me/graylog_illuminate.html)
     - [Configuring CLM importing the Applocker Demo Content Pack](https://github.com/fvjb/Windows-Monitoring/tree/master/contentpacks)
     - [Configure Windows Servers to create the required Logs](https://github.com/fvjb/Windows-Monitoring/tree/master/grouppolicy)
     - Configure Windows Servers to send the required Logs
-        - [Sidecar](https://go2docs.graylog.org/5-0/getting_in_log_data/graylog_sidecar.html)
-        - [NXLog - Gelf]() - optional
+        - [Install Graylog Sidecar](https://go2docs.graylog.org/5-0/getting_in_log_data/graylog_sidecar.html)
+        - [Install NXLog]() - optional
+        - [Configure Sidecars](https://go2docs.graylog.org/5-0/getting_in_log_data/graylog_sidecar.html#SidecarConfiguration)
     - Verify Results: Open the __"Windows - Applocker"__ Dashboard and start investigating: 
 
     ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-5.png)
@@ -53,9 +54,11 @@ How to achieve this?
         - __what application__ (apppath) 
         - __on which system__ (source) with 
         - _what consequences (action)_
-    - Export relevant data required for organization-wide discussions and potential further processing in Excel
+    - Export relevant data required for organization-wide discussions and potential further processing in Excel; get as much context data as you need to have successful conversation with other team members or departments.
 
     ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-11.png)
+
+    - Open it in Excel (or any other appropriate tool) review the Information you collected; now you can decide to split the list and let different teams work on figuring out what applications are legitimate and what applications are not. 
 
     ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-13.png)
 
