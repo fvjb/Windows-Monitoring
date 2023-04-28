@@ -93,10 +93,10 @@ How to achieve this?
     - Work through all applications and understand which of these require your attention. The base path ("appbase") can be helpful when prioritizing activities. Add a column "appcat" and decide how to categorize an application
         - "AUTHORIZE" or
         - "SUPPRESS" 
-        
+
     - CAREFUL: "appcat" __MUST__ reside between "appid" and "apppath" (if you want to keep this column)
     
-    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-12.png)
+    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-12a.png)
 
     - You then remove all columns and just leave "appid" and "appcat" (and "apppath", if you find it helpful for having human-readable App identifiers)
     
