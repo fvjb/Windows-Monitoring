@@ -94,11 +94,11 @@ How to achieve this?
         - "AUTHORIZE" or
         - "SUPPRESS" 
     
-    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-9.png)
+    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-12.png)
 
     - You then remove all columns and just leave "appid" and "appcat" (and "apppath", if you find it helpful for having human-readable App identifiers)
     
-    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-10.png)
+    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-13.png)
 
 
 
