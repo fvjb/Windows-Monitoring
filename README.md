@@ -60,7 +60,7 @@ How to achieve this?
         - __who uses__ (user_name) 
         - __what application__ (apppath) 
         - __on which system__ (source) with 
-        - _what consequences (action)_
+        - _what consequences (appaction)_
 
         ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-4.png)
 
@@ -87,12 +87,21 @@ How to achieve this?
 
     - Open it in Excel (or any other appropriate tool) review the Information you collected; now you can decide to split the list and let different teams work on figuring out what applications are legitimate and what applications are not. 
 
-    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-12.png)
+    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-8.png)
 
 - Create Application Whitelist
-    - Work through all applications and understand which of these require your attention. The base path ("appbase") can be helpful when prioritizing activities. 
+    - Work through all applications and understand which of these require your attention. The base path ("appbase") can be helpful when prioritizing activities. Add a column "appcat" and decide how to categorize an application
+        - "AUTHORIZE" or
+        - "SUPPRESS" 
     
-    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-14.png)
+    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-9.png)
+
+    - You then remove all columns and just leave "appid" and "appcat" (and "apppath", if you find it helpful for having human-readable App identifiers)
+    
+    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-10.png)
+
+
+
 
 - Refine Application Whitelist (optional)
     - Once you have [a list with applications to be whitelisted](https://github.com/fvjb/Windows-Monitoring/blob/master/refinement/applocker-lookuptable.csv), feed them back into the system as a lookup table. You can then focus on all applications that are not contained in the list but logged anyway. 
