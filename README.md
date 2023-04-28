@@ -62,6 +62,15 @@ How to achieve this?
         - __on which system__ (source) with 
         - _what consequences (action)_
 
+    - In case the number of applications is high and you need multiple teams to work with you, we recommend to enrich your logs with the responsibility flag ("appteam"): 
+        - create a csv-list of systems with the corresponding teams following this format and make sure it's utf-8 encoded: 
+            "machine","team"
+            "SERVER132","TEAM BOSTON"
+            "SERVER202","TEAM HOUSTON"
+            [EXAMPLE FILE]()
+        - upload this list to your graylog server(s) and store it in __"/etc/graylog/lookup-tables"__ (must be the same path on all machines)
+        - make sure the user "graylog" has __read and write permissions__ on the file (_chown graylog:graylog yourlookuptable.csv_)
+
     - Export relevant data required for organization-wide discussions and potential further processing in Excel; get as much context data as you need to have successful conversation with other team members or departments.
         - create a list with relevant log messages: 
 
@@ -70,7 +79,7 @@ How to achieve this?
         - create a CSV export file to leverage collaboration with other teams: 
 
     ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-3.png)
-    
+
 
     ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-11.png)
 
