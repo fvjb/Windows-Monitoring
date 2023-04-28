@@ -46,7 +46,7 @@ How to achieve this?
         - [Configure Sidecars](https://go2docs.graylog.org/5-0/getting_in_log_data/graylog_sidecar.html#SidecarConfiguration)
     - Verify Results: Open the __"Windows - Applocker"__ Dashboard and start investigating: 
 
-    ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-5.png)
+    ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-1.png)
 
 - Determine legitimate and non-authorized applications
     - Investigate the "Application Overview" Dashboard and understand the user-application-system triangle 
