@@ -46,17 +46,34 @@ How to achieve this?
         - [Configure Sidecars](https://go2docs.graylog.org/5-0/getting_in_log_data/graylog_sidecar.html#SidecarConfiguration)
     - Verify Results: Open the __"Windows - Applocker"__ Dashboard and start investigating: 
 
+
     ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-1.png)
 
-- Determine legitimate and non-authorized applications
-    - Investigate the "Application Overview" Dashboard and understand the user-application-system triangle 
+
+- Now determine legitimate and non-authorized applications
+    - Start with the "Application Overview" Dashboard and find out
+        - what application types are mostly used within your organization
+        - how many applications you have to consider in the first step
+        - what base directories those applications start from 
+
+    - Investigate the "Application List" and understand the user-application-system triangle 
         - __who uses__ (user_name) 
         - __what application__ (apppath) 
         - __on which system__ (source) with 
         - _what consequences (action)_
+
     - Export relevant data required for organization-wide discussions and potential further processing in Excel; get as much context data as you need to have successful conversation with other team members or departments.
+        - create a list with relevant log messages: 
+
+    ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-2.png)
+
+        - create a CSV export file to leverage collaboration with other teams: 
+
+    ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-3.png)
+    
 
     ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-11.png)
+
 
     - Open it in Excel (or any other appropriate tool) review the Information you collected; now you can decide to split the list and let different teams work on figuring out what applications are legitimate and what applications are not. 
 
