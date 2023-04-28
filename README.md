@@ -68,6 +68,9 @@ How to achieve this?
         - create a csv-list of systems with the corresponding teams following this format and make sure it's utf-8 encoded: ([Template](https://github.com/fvjb/Windows-Monitoring/blob/master/lookuptables/managementlist.csv))
         - upload this list to your graylog server(s) and store it in __"/etc/graylog/lookup-tables"__ (must be the same path on all machines)
         - make sure the user "graylog" has __read and write permissions__ on the file (_chown graylog:graylog yourlookuptable.csv_)
+        - now you will get the required context to assign and delegate responsibilities: 
+        
+    ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-5.png)
 
     - Export relevant data required for organization-wide discussions and potential further processing in Excel; get as much context data as you need to have successful conversation with other team members or departments.
         - create a list with relevant log messages: 
