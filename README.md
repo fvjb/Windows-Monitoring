@@ -102,7 +102,9 @@ How to achieve this?
     
     ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-13.png)
 
+    - Make sure to export your working results from Excel (or any other tool) using the right format: 
 
+    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-14.png)
 
 
 - Refine Application Whitelist (optional)
