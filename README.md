@@ -62,7 +62,9 @@ How to achieve this?
         - __on which system__ (source) with 
         - _what consequences (action)_
 
-    - In case the number of applications is high and you need multiple teams to work with you, we recommend to enrich your logs with the responsibility flag ("appteam"): 
+    ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-4.png)
+
+    - Notice that the flag "appteam" is unused. In case the number of applications is high and you need multiple teams to work with you, we recommend to enrich your logs with the responsibility flag ("appteam"): 
         - create a csv-list of systems with the corresponding teams following this format and make sure it's utf-8 encoded: ([Template](https://github.com/fvjb/Windows-Monitoring/blob/master/lookuptables/managementlist.csv))
         - upload this list to your graylog server(s) and store it in __"/etc/graylog/lookup-tables"__ (must be the same path on all machines)
         - make sure the user "graylog" has __read and write permissions__ on the file (_chown graylog:graylog yourlookuptable.csv_)
@@ -76,8 +78,6 @@ How to achieve this?
 
     ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-3.png)
 
-
-    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-11.png)
 
 
     - Open it in Excel (or any other appropriate tool) review the Information you collected; now you can decide to split the list and let different teams work on figuring out what applications are legitimate and what applications are not. 
