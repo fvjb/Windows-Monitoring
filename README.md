@@ -79,7 +79,7 @@ How to achieve this?
 
         - create a CSV export file to leverage collaboration with other teams: 
 
-        ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-3.png)
+        ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-3a.png)
 
         - make sure you get all fields you need for making reliable decisions (block/allow) and grant technical uniqueness ("appid")
 
