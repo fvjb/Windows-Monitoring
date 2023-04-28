@@ -81,6 +81,10 @@ How to achieve this?
 
         ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-3.png)
 
+        - make sure you get all fields you need for making reliable decisions (block/allow) and grant technical uniqueness ("appid")
+
+        ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-6.png)
+
     - Open it in Excel (or any other appropriate tool) review the Information you collected; now you can decide to split the list and let different teams work on figuring out what applications are legitimate and what applications are not. 
 
     ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-6.png)
