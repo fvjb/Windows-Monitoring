@@ -117,7 +117,7 @@ How to achieve this?
 
 
 - Refine Application Whitelist (optional)
-    - Once you have [a list with applications to be whitelisted](https://github.com/fvjb/Windows-Monitoring/blob/master/refinement/my-applicationwhitelist.csv), feed them back into the system as a lookup table. You can then focus on all applications that are not contained in the list but logged anyway. 
+    - Once you have [a list with applications to be whitelisted](https://github.com/fvjb/Windows-Monitoring/blob/master/lookuptables/my-applicationwhitelist.csv), feed them back into the system as a lookup table. You can then focus on all applications that are not contained in the list but logged anyway. 
 
     ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-19.png)
 
