@@ -121,7 +121,14 @@ How to achieve this?
 
     ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-19.png)
 
-    
+    - Try then to identify inconsistend configurations: 
+        - Whitelisted Applications that are indicated to be blocked
+        - Blacklisted Applications that are indicated to be run
 
+    - Once you updated your application whitelist, make sure to feed it back to the system and review the Dashboard afterwards
+
+__CAREFUL__ the additional information is only added to incoming logs. The existing logs will not be tagged. During the phase of continuous refinement you may want to overwrite the Search Time Range to have results that properly reflect your changes: 
+
+![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-20.png)
 
 - Rollout Applocker
