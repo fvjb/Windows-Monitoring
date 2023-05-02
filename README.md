@@ -102,7 +102,11 @@ How to achieve this?
     
     ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-13.png)
 
-    - Make sure to export your working results from Excel (or any other tool) using the right format ([Example](https://github.com/fvjb/Windows-Monitoring/blob/master/lookuptables/applicationwhitelist.csv)): 
+    -  Make sure to remove all double-entries per "appid": 
+
+    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-15.png)
+
+    - Be careful to export your working results from Excel (or any other tool) using the right format ([Example](https://github.com/fvjb/Windows-Monitoring/blob/master/lookuptables/applicationwhitelist.csv)): 
 
     ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-14.png)
 
