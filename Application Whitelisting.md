@@ -146,8 +146,8 @@ How to achieve this?
         - use Graylog to monitor the outcome of what you did
         - whenever you find a blocked Application, look into it: 
 
-        [Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-25.png)
+        ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-25.png)
 
-        [Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-26.png)
+        ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-26.png)
 
-        [Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-27.png)
+        ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-27.png)
