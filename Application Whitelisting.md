@@ -131,4 +131,9 @@ How to achieve this?
 
     ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-20.png)
 
+    - Example: You find a number of Apps, that would be blocked while you categorized them as "AUTHORIZE": 
+
+    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-21.png)
+
+
 - Rollout Applocker
