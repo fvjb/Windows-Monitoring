@@ -135,5 +135,8 @@ How to achieve this?
 
     ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-22.png)
 
+    - Take action and adopt your Applocker Policy accordingly to allow this execution. Go through this process until you get a result confirming that all "AUTHORIZED" sofware is allowed by Applocker: 
+
+    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-23.png)
 
 - Rollout Applocker
