@@ -1,5 +1,3 @@
-## WINDOWS MONITORING
-### Application Whitelisting
 #### Challenge
 One of the most challenging tasks of a Windows Administrator is to keep track and execute control on all applications being used within the scope of an organizations IT environment; however, there are many reasons to do it:
 - __detecting__ all applications being used on Server and Client devices 
