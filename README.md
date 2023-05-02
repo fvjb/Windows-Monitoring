@@ -116,15 +116,17 @@ How to achieve this?
         - now you will get the required context to assign and delegate responsibilities:
 
 
-- Refine Application Whitelist (optional)
+- Refine Application Whitelist 
     - Once you have [a list with applications to be whitelisted](https://github.com/fvjb/Windows-Monitoring/blob/master/lookuptables/my-applicationwhitelist.csv), feed them back into the system as a lookup table. You can then focus on all applications that are not contained in the list but logged anyway. 
 
-    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-19.png)
+    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-16.png)
 
     - Now add another category "appcat" and define whether an application must be __suppressed__ or __authorized__; keep the following columns: _"appid"_, _"appcat"_ and _"apppath"_
 
     ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-21.png)
 
     - Save it as a __.csv__ file and make sure strings are saved with double-quotes (__"__), fields separated by comma (__,__)
+
+
 
 - Rollout Applocker
