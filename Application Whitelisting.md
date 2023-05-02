@@ -133,7 +133,7 @@ How to achieve this?
 
     - Example: You find a number of Apps, that would be blocked while you categorized them as "AUTHORIZE": 
 
-    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-21.png)
+    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-22.png)
 
 
 - Rollout Applocker
