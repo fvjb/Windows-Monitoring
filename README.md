@@ -119,7 +119,7 @@ How to achieve this?
 - Refine Application Whitelist 
     - Once you have [a list with applications to be whitelisted](https://github.com/fvjb/Windows-Monitoring/blob/master/lookuptables/my-applicationwhitelist.csv), feed them back into the system as a lookup table. You can then focus on all applications that are not contained in the list but logged anyway. 
 
-    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-17.png)
+    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-16.png)
 
     - Now add another category "appcat" and define whether an application must be __suppressed__ or __authorized__; keep the following columns: _"appid"_, _"appcat"_ and _"apppath"_
 
