@@ -151,3 +151,7 @@ How to achieve this?
         ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-26.png)
 
         ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-27.png)
+
+        - this example shows an application, that was marked as "AUTHORIZED", but the Applocker Policy allowed access for a specific user group only. 
+
+- Good Luck!
