@@ -137,6 +137,10 @@ How to achieve this?
 
     - Take action and adopt your Applocker Policy accordingly to allow this execution. Go through this process until you get a result confirming that all "AUTHORIZED" sofware is allowed by Applocker: 
 
-    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-23.png)
+    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-24.png)
 
 - Rollout Applocker
+    - It's time to get started. Apply your first enforcement rule: 
+        - keep the scope tight (do __NOT__ enroll it throughout your entire environment but start with selected systems first)
+        - make sure to work with the "Whitelist Validation (complete)" Dashboard, otherwise you migth miss default applications and see failures in operations
+        - use Graylog to monitor the outcome of what you did
