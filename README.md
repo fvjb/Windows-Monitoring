@@ -65,7 +65,7 @@ How to achieve this?
         ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-4.png)
 
     - Notice that the flag "appteam" is unused. In case the number of applications is high and you need multiple teams to work with you, we recommend to enrich your logs with the responsibility flag ("appteam"): 
-        - create a csv-list of systems with the corresponding teams following this format and make sure it's utf-8 encoded: ([Template](https://github.com/fvjb/Windows-Monitoring/blob/master/lookuptables/managementlist.csv))
+        - create a csv-list of systems with the corresponding teams following this format and make sure it's utf-8 encoded: ([Template](https://github.com/fvjb/Windows-Monitoring/blob/master/lookuptables/my-servermanagementlist.csv))
         - upload this list to your graylog server(s) and store it in __"/etc/graylog/lookup-tables"__ (must be the same path on all machines)
         - make sure the user "graylog" has __read and write permissions__ on the file (_chown graylog:graylog yourlookuptable.csv_)
         - now you will get the required context to assign and delegate responsibilities: 
@@ -106,18 +106,18 @@ How to achieve this?
 
     ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-15.png)
 
-    - Be careful to export your working results from Excel (or any other tool) using the right format ([Example](https://github.com/fvjb/Windows-Monitoring/blob/master/lookuptables/applicationwhitelist.csv)): 
+    - Be careful to export your working results from Excel (or any other tool) using the right format ([Example](https://github.com/fvjb/Windows-Monitoring/blob/master/lookuptables/my-applicationwhitelist.csv)): 
 
     ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-14.png)
 
     - Feed the Outcome of your work to Graylog: 
         - upload this list to your graylog server(s) and store it in __"/etc/graylog/lookup-tables"__ (must be the same path on all machines)
-        - make sure the user "graylog" has __read and write permissions__ on the file (_chown graylog:graylog applicationwhitelist.csv_)
+        - make sure the user "graylog" has __read and write permissions__ on the file (_chown graylog:graylog my-applicationwhitelist.csv_)
         - now you will get the required context to assign and delegate responsibilities:
 
 
 - Refine Application Whitelist (optional)
-    - Once you have [a list with applications to be whitelisted](https://github.com/fvjb/Windows-Monitoring/blob/master/refinement/applocker-lookuptable.csv), feed them back into the system as a lookup table. You can then focus on all applications that are not contained in the list but logged anyway. 
+    - Once you have [a list with applications to be whitelisted](https://github.com/fvjb/Windows-Monitoring/blob/master/refinement/my-applicationwhitelist.csv), feed them back into the system as a lookup table. You can then focus on all applications that are not contained in the list but logged anyway. 
 
     ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-19.png)
 
