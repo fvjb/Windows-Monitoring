@@ -127,7 +127,7 @@ How to achieve this?
 
     - Once you updated your application whitelist, make sure to feed it back to the system and review the Dashboard afterwards
 
-__CAREFUL__ the additional information is only added to incoming logs. __The existing logs will not be tagged__. During the phase of continuous refinement you may want to overwrite the Search Time Range to have results that properly reflect your changes: 
+    __CAREFUL__ the additional information is only added to incoming logs. __The existing logs will not be tagged__. During the phase of continuous refinement you may want to overwrite the Search Time Range to have results that properly reflect your changes: 
 
     ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-20.png)
 
