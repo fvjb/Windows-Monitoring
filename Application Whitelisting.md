@@ -139,8 +139,15 @@ How to achieve this?
 
     ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-24.png)
 
-- Rollout Applocker
+- Rollout Applocker Enforcement Policies
     - It's time to get started. Apply your first enforcement rule: 
         - keep the scope tight (do __NOT__ enroll it throughout your entire environment but start with selected systems first)
         - make sure to work with the "Whitelist Validation (complete)" Dashboard, otherwise you migth miss default applications and see failures in operations
         - use Graylog to monitor the outcome of what you did
+        - whenever you find a blocked Application, look into it: 
+
+        [Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-25.png)
+
+        [Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-26.png)
+
+        [Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-27.png)
