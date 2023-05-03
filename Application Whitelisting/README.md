@@ -45,7 +45,7 @@ How to achieve this?
     - Verify Results: Open the __"Windows - Applocker"__ Dashboard and start investigating: 
 
 
-    ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-1.png)
+    ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/Application%20Whitelisting/images/Applocker-1.png)
 
 
 - Now determine legitimate and non-authorized applications
@@ -60,7 +60,7 @@ How to achieve this?
         - __on which system__ (source) with 
         - _what consequences (appaction)_
 
-        ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-4.png)
+        ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/Application%20Whitelisting/images/Applocker-4.png)
 
     - Notice that the flag "appteam" is unused. In case the number of applications is high and you need multiple teams to work with you, we recommend to enrich your logs with the responsibility flag ("appteam"): 
         - create a csv-list of systems with the corresponding teams following this format and make sure it's utf-8 encoded: ([Template](https://github.com/fvjb/Windows-Monitoring/blob/master/lookuptables/my-servermanagementlist.csv))
@@ -68,24 +68,24 @@ How to achieve this?
         - make sure the user "graylog" has __read and write permissions__ on the file (_chown graylog:graylog yourlookuptable.csv_)
         - now you will get the required context to assign and delegate responsibilities: 
 
-        ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-5.png)
+        ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/Application%20Whitelisting/images/Applocker-5.png)
 
     - Export relevant data required for organization-wide discussions and potential further processing in Excel; get as much context data as you need to have successful conversation with other team members or departments.
         - create a list with relevant log messages: 
 
-        ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-2.png)
+        ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/Application%20Whitelisting/images/Applocker-2.png)
 
         - create a CSV export file to leverage collaboration with other teams: 
 
-        ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-3a.png)
+        ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/Application%20Whitelisting/images/Applocker-3a.png)
 
         - make sure you get all fields you need for making reliable decisions (block/allow) and grant technical uniqueness ("appid")
 
-        ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-7.png)
+        ![Dashboard](https://github.com/fvjb/Windows-Monitoring/blob/master/Application%20Whitelisting/images/Applocker-7.png)
 
     - Open it in Excel (or any other appropriate tool) review the Information you collected; now you can decide to split the list and let different teams work on figuring out what applications are legitimate and what applications are not. 
 
-    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-8.png)
+    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/Application%20Whitelisting/images/Applocker-8.png)
 
 - Create Application Whitelist
     - Work through all applications and understand which of these require your attention. The base path ("appbase") can be helpful when prioritizing activities. Add a column "appcat" and decide how to categorize an application
@@ -94,19 +94,19 @@ How to achieve this?
 
     - CAREFUL: "appcat" __MUST__ reside between "appid" and "apppath" (if you want to keep this column)
     
-    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-12a.png)
+    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/Application%20Whitelisting/images/Applocker-12a.png)
 
     - You then remove all columns and just leave "appid" and "appcat" (and "apppath", if you find it helpful for having human-readable App identifiers)
     
-    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-13.png)
+    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/Application%20Whitelisting/images/Applocker-13.png)
 
     -  Make sure to remove all double-entries per "appid": 
 
-    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-15.png)
+    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/Application%20Whitelisting/images/Applocker-15.png)
 
     - Be careful to export your working results from Excel (or any other tool) using the right format ([Example](https://github.com/fvjb/Windows-Monitoring/blob/master/lookuptables/my-applicationwhitelist.csv)): 
 
-    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-14.png)
+    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/Application%20Whitelisting/images/Applocker-14.png)
 
     - Feed the Outcome of your work to Graylog: 
         - upload this list to your graylog server(s) and store it in __"/etc/graylog/lookup-tables"__ (must be the same path on all machines)
@@ -117,7 +117,7 @@ How to achieve this?
 - Refine Application Whitelist 
     - Now you can analyze what's going on within the monitored environment. Identify all uncategorized applications and make sure you define whether to flag them as "AUTHORIZED" or "SUPPRESSED". Try to get the number of uncategorized applications to "0". 
 
-    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-19.png)
+    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/Application%20Whitelisting/images/Applocker-19.png)
 
     - Try then to identify inconsistend configurations: 
         - Whitelisted Applications that are indicated to be blocked
@@ -127,15 +127,15 @@ How to achieve this?
 
     __CAREFUL__ the additional information is only added to incoming logs. __The existing logs will not be tagged__. During the phase of continuous refinement you may want to overwrite the Search Time Range to have results that properly reflect your changes: 
 
-    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-20.png)
+    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/Application%20Whitelisting/images/Applocker-20.png)
 
     - Example: You find a number of Apps, that would be blocked while you categorized them as "AUTHORIZE": 
 
-    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-22.png)
+    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/Application%20Whitelisting/images/Applocker-22.png)
 
     - Take action and adopt your Applocker Policy accordingly to allow this execution. Go through this process until you get a result confirming that all "AUTHORIZED" sofware is allowed by Applocker: 
 
-    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-24.png)
+    ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/Application%20Whitelisting/images/Applocker-24.png)
 
 - Rollout Applocker Enforcement Policies
     - It's time to get started. Apply your first enforcement rule: 
@@ -144,11 +144,11 @@ How to achieve this?
         - use Graylog to monitor the outcome of what you did
         - whenever you find a blocked Application, look into it: 
 
-        ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-25.png)
+        ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/Application%20Whitelisting/images/Applocker-25.png)
 
-        ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-26.png)
+        ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/Application%20Whitelisting/images/Applocker-26.png)
 
-        ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/images/Applocker-27.png)
+        ![Export](https://github.com/fvjb/Windows-Monitoring/blob/master/Application%20Whitelisting/images/Applocker-27.png)
 
         - this example shows an application, that was marked as "AUTHORIZED", but the Applocker Policy allowed access for a specific user group only. 
 
